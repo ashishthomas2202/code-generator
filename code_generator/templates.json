@@ -1,11 +1,14 @@
 {
   "python": {
+    "variable_value": {
+      "number": ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
+    },
     "variable_declaration": {
-      "simple": {
+      "default": {
         "template": "variable_name = variable_value",
         "input": ["variable_name", "variable_value"]
       },
-      "initialize_none": "variable_name = None  # Initialize as None",
+      "uninitialized": "variable_name = None  # Initialize as None",
       "initialize_empty_list": "variable_name = []    # Initialize as an empty list"
     },
     "function_declaration": {
