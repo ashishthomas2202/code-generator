@@ -1,6 +1,5 @@
 import os
 import openai
-import json
 
 
 def initiate():
@@ -71,7 +70,7 @@ def initiate():
     while not done:
         user_input = input("Is a Frontend required? (yes/no): ").lower()
         if user_input in ["yes", "no"]:
-            project["requirements"]["backend_required"] = (
+            project["requirements"]["frontend_required"] = (
                 user_input == 'yes')
             done = True
         else:
@@ -93,7 +92,7 @@ def initiate():
         while not done:
             user_input = input("Is a Frontend required? (yes/no): ").lower()
             if user_input in ["yes", "no"]:
-                project["requirements"]["backend_required"] = (
+                project["requirements"]["frontend_required"] = (
                     user_input == 'yes')
                 done = True
             else:
